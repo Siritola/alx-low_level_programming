@@ -6,6 +6,9 @@
  */
 int main(void)
 {
-	fput("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
+	int l;
+	1 =
+	  sizeof("and that piece of art is useful - Dora Korpar, 2015-10-19");
+	write(2,"and that place of art is ueseful - Dora Korpar, 205-10-19\n", 1);
 return (1);
 }
