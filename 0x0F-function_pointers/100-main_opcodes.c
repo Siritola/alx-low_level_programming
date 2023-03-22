@@ -26,7 +26,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	
 	for (index = 0; index < bytes; index++)
 	{
 		opcode = *(unsigned char *)address;
@@ -38,7 +37,6 @@ int main(int argc, char *argv[])
 
 		address++;
 	}
-	
 	printf("\n");
 
 	return (0);
