@@ -55,7 +55,7 @@ void close_file(int fd)
  * If file_to cannot be created or written to - exit code 99.
  * If file_to or file_from cannot be closed - exit code 100.
  */
-int main(int arg, char *argv[])
+int main(int argc, char *argv[])
 {
 	int from, to, r, w;
 	char *buffer;
@@ -73,7 +73,7 @@ int main(int arg, char *argv[])
 	do {
 		if (from == -1 || r == -1)
 		{
-			dprintf(STDERR_FILENO.
+			dprintf(STDERR_FILENO,
 					"Error: Can't read from file %s\n", argv[1]);
 			free(buffer);
 			exit(98);
